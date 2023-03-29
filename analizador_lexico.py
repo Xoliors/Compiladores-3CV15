@@ -8,7 +8,7 @@ reservadas = ['BEGIN','END','IF','ELSE','FOR','THEN','WHILE','DO','CALL','CONST'
 
 tokens = reservadas+['ID','NUMBER','PLUS','MINUS','TIMES','DIVIDE','ODD','ASSIGN','NE','SLASH',
                      'LT','LTE','GT','GTE','LPARENT','RPARENT','COMMA','SEMMICOLOM','DOT','BACKSLASH',
-                     'UPDATE','LBRACKET','RBRACKET','LBRACE','RBRACE','SQUOTE','DQUOTEMARK','BACKTICKS','NEWLINE'
+                     'UPDATE','LBRACKET','RBRACKET','LBRACE','RBRACE','SQUOTE','DQUOTEMARK','BACKTICKS'
                     ]
 
 t_ignore = '\t '
@@ -38,7 +38,6 @@ t_DQUOTEMARK = r'\"'
 t_BACKTICKS = r'\´'
 t_SLASH = r'\/'
 t_BACKSLASH = r'\\'
-t_NEWLINE = r'\n+'
 
 def t_ID(t):
 	r'[a-zA-Z_][a-zA-Z0-9_]*'
