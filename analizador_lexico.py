@@ -1,8 +1,6 @@
-import ply.lex as lex #se usa para tokenizar una cadena de entrada y esta divide la cadena en tokens individuales
-import re #paquete integrado, que se puede usar para trabajar con expresiones regulares.
-import codecs #Este módulo define las clases base para los códecs estándar de Python (codificadores y decodificadores)
-import os #Este módulo provee una manera versátil de usar funcionalidades dependientes del sistema operativo. 
-import sys #Este módulo provee acceso a algunas variables usadas o mantenidas por el intérprete y a funciones que interactúan fuertemente con el intérprete.
+import ply.lex as lex 
+import codecs 
+import os 
 
 reservadas = ['BEGIN','END','IF','ELSE','FOR','THEN','WHILE','DO','CALL','CONST','VAR','PROCEDURE','OUT','IN']
 
