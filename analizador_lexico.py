@@ -39,7 +39,7 @@ t_BACKSLASH = r'\\'
 t_NEWLINE = r'\n+'
 
 def t_ID(t):
-	r'[a-zA-Z_][a-zA-Z]*'
+	r'[a-zA-Z_][a-zA-Z]'
 	if t.value.upper() in reservadas:
 		t.value = t.value.upper()
 		#reservadas.get(t.value,'ID')
