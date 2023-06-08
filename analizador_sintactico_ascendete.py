@@ -73,6 +73,7 @@ class SQLParser:
             'fields': fields,
             'tables': tables
         }
+        print("consulta valida")
 
     def field_list(self):
         fields = []
@@ -113,10 +114,12 @@ class Token:
 
 def main():
     parser = SQLParser()
-    query = input("Ingrese la consulta SQL: ")
-    result = parser.parse(query)
-    print(result)
-
+    while True:
+        query = input("")
+        if query.lower() == "salir":
+            break
+        result = parser.parse(query)
+        print(result)
 
 if __name__ == "__main__":
     main()

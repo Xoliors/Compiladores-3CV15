@@ -112,7 +112,12 @@ def get_token_type(token_value):
         return 'IDENTIFIER'
 
 # Ejemplo de uso
-sql = sys.argv[1]
-input_query = sql
-parse_input(input_query)
-print('Consulta válida')
+while True:
+    sql = input("")
+
+    if sql.lower() == "salir":
+        break
+
+    input_query = sql
+    parse_input(input_query)
+    print('Consulta válida')
