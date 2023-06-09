@@ -1,0 +1,1 @@
+select distinct campo1, campo2, campo1 from tabla1
